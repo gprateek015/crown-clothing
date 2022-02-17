@@ -15,7 +15,7 @@ import {
 } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCyN7DrLbykJKcBeWPAU9NpKGyoEkpv-nA',
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: 'crown-clothing-13d78.firebaseapp.com',
   projectId: 'crown-clothing-13d78',
   storageBucket: 'crown-clothing-13d78.appspot.com',
