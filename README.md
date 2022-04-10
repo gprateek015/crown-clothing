@@ -1,4 +1,4 @@
-# crown-clothing
+# Crown Clothing
 
 You can checkout the project at https://crown-clothng.netlify.app
 
