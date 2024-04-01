@@ -4,24 +4,24 @@ import {
   doc,
   getDoc,
   setDoc,
-  onSnapshot,
+  onSnapshot
 } from 'firebase/firestore';
 import {
   GoogleAuthProvider,
   getAuth,
   signInWithPopup,
   createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
+  signInWithEmailAndPassword
 } from 'firebase/auth';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: 'crown-clothing-13d78.firebaseapp.com',
-  projectId: 'crown-clothing-13d78',
-  storageBucket: 'crown-clothing-13d78.appspot.com',
-  messagingSenderId: '928853826165',
-  appId: '1:928853826165:web:b142ba550b96205b81f63c',
-  measurementId: 'G-08JX3C0B6T',
+  authDomain: 'crwn-clothing-db-9c419.firebaseapp.com',
+  projectId: 'crwn-clothing-db-9c419',
+  storageBucket: 'crwn-clothing-db-9c419.appspot.com',
+  messagingSenderId: '122457548852',
+  appId: '1:122457548852:web:b2529b2be204ecf8d8c261',
+  measurementId: 'G-ZR1SDLH1QD'
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -48,7 +48,7 @@ export const createUserProfile = async (userAuth, additionalDetails) => {
         displayName,
         email,
         createdAt,
-        ...additionalDetails,
+        ...additionalDetails
       });
     } catch (err) {
       console.log('Error creating user ', err.message);
@@ -60,6 +60,6 @@ export const createUserProfile = async (userAuth, additionalDetails) => {
 export {
   onSnapshot,
   createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
+  signInWithEmailAndPassword
 };
 export default firebase;

@@ -1,0 +1,23 @@
+.container {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  padding: 16px;
+  border-radius: 5px;
+  border: 1px solid #b6b6b6;
+  background-color: white;
+  z-index: 1000;
+
+  .name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    margin-bottom: 2px;
+  }
+}
