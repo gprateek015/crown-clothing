@@ -23,11 +23,6 @@ const Header = ({ currentUser, cartHidden }) => {
         <Link to='/shop' className='option'>
           SHOP
         </Link>
-        <div className='contact-wrapper'>
-          <div className='option' onClick={handleContactClick}>
-            CONTACT
-          </div>
-        </div>
         {currentUser ? (
           <div className='option' onClick={() => auth.signOut()}>
             SIGN OUT
