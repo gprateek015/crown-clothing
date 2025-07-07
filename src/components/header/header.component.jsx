@@ -10,15 +10,9 @@ import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 
 import './header.styles.scss';
-import ContactPopup from './contact-popup';
-import { useState } from 'react';
 
 const Header = ({ currentUser, cartHidden }) => {
-  const [contactPopupOpen, setContachPopupOpen] = useState(false);
 
-  const handleContactClick = () => {
-    setContachPopupOpen(curr => !curr);
-  };
 
   return (
     <div className='header'>
@@ -33,7 +27,6 @@ const Header = ({ currentUser, cartHidden }) => {
           <div className='option' onClick={handleContactClick}>
             CONTACT
           </div>
-          <ContactPopup open={contactPopupOpen} />
         </div>
         {currentUser ? (
           <div className='option' onClick={() => auth.signOut()}>
